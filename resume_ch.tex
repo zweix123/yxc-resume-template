@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{xeCJK}  
+\usepackage{color}
+\usepackage[citecolor=green
+            ]{hyperref}
+
+\name{Xxxx Xxxx} % Your name
+\address{+(86) 132XXXXX975 \\ xxxxxxxx@gmail.com} % Your phone number and email
+\address{北京市海淀区颐和园路5号北京大学，邮编100871}  % Your address
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{教育}
+{\textbf{北京大学}} \hfill {\em 2016.9 - 至今} \\ 
+硕士研究生，网络所，GPA:xxxx(100)
+
+{\textbf{北京大学}} \hfill {\em 2012.9 - 2016.6} \\
+本科生，计算机系
+\begin{rSubsection}{}{}{}{}
+\item 总GPA: xxx/4.00 \ \ 专业课GPA: xxxx/4.00 
+\end{rSubsection}
+
+{\textbf{爱丁堡大学}} \hfill {\em 2015.7 - 2015.8} \\ 
+信息学院交流
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	HONORS / AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{荣誉 / 奖项}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+NOI – 金牌 & {\em 2011.7} \\
+北京大学游戏AI编程对抗赛第一名 & {\em 2015.6} \\
+SIGMOD2017编程竞赛第二名 & {\em 2017.3} \\
+五四青年奖学金 & {\em 2014} \\
+\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORKING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{工作经历}
+
+\begin{rSubsection}{谷歌中国}{\em 2018.6 - 2018.9}
+{实习生，Web Development Service \\}
+{对网站内容进行分类，判断是否适用于markup标签，并给出markup推荐配置}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 编写分布式数据处理Pipeline
+\item[-] 用TensorFlow训练模型，并根据结果对模型进行调整和改进
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{微软互联网工程院}{\em 2017.9 - 2018.2}
+{实习生，小冰组 \\}
+{主要负责尝试各种NLP特征，以及实现一些工程性的pipeline，编程语言主要是C\#.}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 在C\#中手写CNN模型预测。一共写了两个版本，内存优化版本比原有版本快40倍；调用Intel-MKL C++库的版本比原有版本快2倍。
+\item[-] 在自动生成评论的模型中，发现了一种效果很好的特征。
+\item[-] 实现了从数据库到ElasticSearch实时对接的Pipeline，具有良好的容错性和Log机制。
+\end{itemize}
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{今日头条}{\em 2017.6 - 2017.8}
+{实习生，AI-Lab组 \\}
+{主要负责维护服务器端的视频消重服务，应用了Thrift-Framework框架，编程语言C++。}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 尝试了不同的视频消重特征，主要有深度特征、orb特征以及k-means聚类方法。
+\item[-] 编写了一个Web界面，方便人工标数据。
+\item[-] 负责一些清洗数据的工作.
+\end{itemize}
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{旷视科技（Face++）}{\em 2016.3 - 2016.9}
+{实习生, 文本识别研究组 \\}
+{负责维护使用模型识别文字的Pipeline，以及编写Demo。Pipeline以及Demo的服务器引擎主要由C++编写。}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 用C++实现了Opencv中的minAreaRect函数，主要算法是凸包以及旋转卡壳。由于考虑到代码要在移动端运行，因此为了轻便，不能直接集成Opencv。
+\item[-]用最小费用流实现了文字成行算法，效果很好。
+\item[-] 负责调整Pipeline，为不同模型编写Web端的Demo。
+\end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS / RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{项目 / 研究经历}
+
+\begin{rSubsection}{自动调参系统} {\em 2017.12 - 2018.1}
+{用Java实现了一个基于贝叶斯优化的自动调参系统，总共约2000行。\\}
+{Github: \rm \url{https://github.com/xxxxxxxxx}}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 模型: Gaussian Process.
+\item[-] Maximizer: Random Sampling.
+\item[-] Acquisition Function: EI, LCB, GP-UCB
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{SIGMOD 2017 编程竞赛}{\em 2017.1 – 2017.3}{版面排名：第1名. 线下最终测试第2名 \\}
+{给定短语的字典，和很多长文档，然后要求动态地对字典进行插入、删除操作。目标是在每篇文档中，查找出现过哪些字典中的短语。总数据量~10G。提交代码，根据代码运行时间排名}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 使用Hash表和Trie建索引。（尝试过AC-自动机，效果不好）
+\item[-] 实现了一套复杂的并行机制，使得插入、删除、查询操作可以做到完全并行。
+\item[-] 编程语言C++，总共约3000行。
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{阿里大数据竞赛} {\em 2016.10 - 2016.12}
+{给定2016.1-2016.6的线下优惠券使用情况，要求预测2016.7线下优惠券的使用情况，初赛排名(1/1500). 复赛排名(19/1500) \\}
+{三人组队, 负责模型和特征选择，以及数据清洗。}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 复赛时学习使用阿里数加平台。主要工作分为两部分：用Sql处理数据，以及用Java编写MapReduce处理数据；
+\item[-] 尝试过LR、随机森林、Xgboost等机器学习模型，以及模型融合；
+\item[-] 尝试加入时序特征，使AUC提高了1\%左右；
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{3D联机对战手游}{\em 2016.7 – 2016.8}{独立开发 \\}
+{一个MOBA类的安卓手游，每局游戏支持4人在线对战，提供了玩家积分机制，以及根据战斗力自动匹配的机制。}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 游戏逻辑部分由Unity3D引擎开发，编程语言是 C\#；
+\item[-] 服务器端选择了阿里云Linux服务器，登录系统和积分系统由Django框架开发；
+\item[-] 总代码量约7000行；
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{Java代码和注释的自动匹配}{\em 2015.7 – 2015.8}{暑期在爱丁堡大学交换了2个月。 \\}
+{在Charles Sutton的指导下，使用深度学习匹配Java代码块和注释块。最终目标是Java代码注释自动补全。}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] 数据集是从Github上选的Java工程；
+\item[-] 编写Java语法分析器，提取Java代码块和与之对应的注释块。
+\item[-] 生成训练数据：尝试各种规则，生成匹配好的<代码，注释>对。
+\end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{技能}
+\begin{rSubsection}
+{}{}{}{}
+\item[-] 编程语言： 熟练使用 C/C++, C\#, java, python和Go语言, 了解shell, matlab和一些函数式语言，比如scala和scheme。
+\item[-] 处理大数据: 熟悉Hadoop、Spark，以及Parameter Server。
+\item[-] 机器学习：熟练使用numpy, matplotlib, sklearn和xgboost, 了解pandas和tensorflow。
+\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	OTHERS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{其他}
+\begin{rSubsection}
+{}{}{}{}
+\item[-] 数学水平: 数学分析、高等代数和离散数学等均A或A+
+\item[-] 英语水平: CET-6.
+\item[-] GitHub: https://github.com/xxxxxx
+\end{rSubsection}
+\end{rSection}
+
+\end{document}

@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{color}
+\usepackage[citecolor=green
+            ]{hyperref}
+
+\name{Xxxxxx Xxx} % Your name
+\address{+(86) 132xxxxx975 \\ xxxxxx@gmail.com} % Your phone number and email
+\address{Peking University, Haidian District, Beijing 100871, China}  % Your address
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\textbf{Peking University}} \hfill {\em September 2016 - present} \\ 
+M.S. in Peking University, Institute of Network, GPA:xx(100)
+
+{\textbf{Peking University}} \hfill {\em September 2012 - June 2016} \\
+B.S. in Peking University, Department of Computer Science
+\begin{rSubsection}{}{}{}{}
+\item Total GPA: xx/4.00 \ \ Major GPA: xx/4.00 
+\end{rSubsection}
+
+{\textbf{Edinburgh University}} \hfill {\em June 2015 - September 2015} \\ 
+Visiting Scholar in School of Informatics
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	HONORS / AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Honors / Awards}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+NOI – First Prize & {\em July 2011} \\
+ACM/ACPC Tianjin regional competition – Second Prize & {\em September 2012} \\
+Second Prize in ACM Programming Contest (on campus) & {\em May 2013} \\
+Third Prize in ACM Programming Contest (on campus) & {\em May 2014} \\
+Winner in Peking University AI Against Competition & {\em June 2015} \\
+Runner-up in SIGMOD2017 Programming Contest & {\em March 2017} \\
+54-Youth Scholarship & {\em 2014} \\
+\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORKING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Working Experience}
+
+\begin{rSubsection}{Microsoft STC Asia}{\em September 2017 - February 2018}
+{Internship, Department of Xiaoice \\}
+{Responsible for exploring new features in QA process and some other system coding tasks in C\#.}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] Implementation of CNN network in C\# which 2 times faster than original version under Intel-MKL Library and 40 times faster than original version under memory cache.
+\item[-] Finding a new approach to get the matched sentence in an article with its comment.
+\item[-] Implementing some pipelines deal with databases and ElasticSearch servers.
+\end{itemize}
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Bytedance Inc. Beijing}{\em June 2017 - August 2017}
+{Internship, Department of AI-Lab \\}
+{Responsible for maintaining the server side of video deduplication under Thrift-Framework in C++.}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] Add other features in video duduplication process, such as deep-learning feature, orb feature and k-means based feature.
+\item[-] Implementation of a web page tool to label the videos manually.
+\item[-] Tasks of data processing.
+\end{itemize}
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Megvii Inc. Beijing}{\em March 2016 - September 2016}
+{Internship, Team of Text Recognization \\}
+{Responsible for maintaining the pipeline of using the model to recognize all characters of a picture in C++.}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] Implementation of minAreaRect with C++.
+\item[-] Implementation of text in lines with minimum-cost flow.
+\item[-] Responsible for adjusting pipeline according to different models, and displaying demo on website.
+\end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS / RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects / Research Experience}
+
+\begin{rSubsection}{Automatic Hyperparameter Tuning} {\em December 2017 - January 2018}
+{Implementation of a robust Bayesian Optimization framework written in Java. About 2000 lines.\\}
+{Github: \rm \url{https://github.com/xxxxxxx}}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] Model: Gaussian Process.
+\item[-] Maximizer: Random Sampling.
+\item[-] Acquisition Function: EI, LCB, GP-UCB
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{SIGMOD 2017 Programming Contest}{\em January 2017 – March 2017}{2-people Semi-final Rank(1/40). Final Rank(2/40) \\}
+{Given the n-grams, documents and many remove and add operations, the task is finding all n-grams in each
+document. The contest is ranked by time.}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] Using Hash Table and Trie to make index.
+\item[-] Achieving complete parallel to insert, delete and query operations.
+\item[-] Codes: about 3000 lines in C++.
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{Alibaba Big Data Contest} {\em October 2016 - December 2016}
+{Prediction of offline o2o coupon tickets using Ranking in preliminary(1/1500). Ranking in semi-final(19/1500) \\}
+{Three-people team, responsible for the choice of features and models, data cleaning, etc.}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] Learning Ali Shujia in semi-final, writing MR process to extract features with java.
+\item[-] The model of LR, Random Forest, GBDT and fusion of various models are tried.
+\item[-] Temporal features were added and AUC raised by 1\%.
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{3D Online Mobile Game }{\em July 2016 – August 2016}{Independent development \\}
+{A MOBA game on Android, each game supports the maximum of 4 people battling together. The game supports
+players combating according to capability level, provides user login system, and stores personal information in
+the server.}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] The game logic part uses the Unity3D engine with C\#.
+\item[-] Server side is rented Ali Cloud Server, using Django framework written, Apache deployment.
+\item[-] Codes: about 7000 lines.
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{Java Comment Matchment}{\em July 2015 – August 2015}{Exchanging project to Edinburgh University 2 months \\}
+{Using deep learning to match java code blocks and comment blocks with professor Charles Sutton. The ultimate
+goal is to achieve code completion automatically}
+\item[]
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item[-] The dataset is the java project on Github.
+\item[-] Writing java tokenizer to extract java code token, separating code blocks and comment blocks.
+\item[-] Making training data: experimenting various rules to match the code blocks with the comment blocks.
+\end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+\begin{rSubsection}
+{}{}{}{}
+\item[-] Programming language: proficient in C/C++, C\#, java and python, having knowledge of shell, matlab and some
+functional programming languages like scala and scheme
+\item[-] Big data: Familiar with Hadoop and Spark.
+\item[-] Machine learning：proficient in numpy, matplotlib, sklearn and xgboost, having knowledge of pandas and
+tensorflow
+\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	OTHERS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Others}
+\begin{rSubsection}
+{}{}{}{}
+\item[-] Maths Level: A and A+ in Mathematic Analysis, Advanced Algebra, Discrete Mathematics.
+\item[-] English Level: CET-6.
+\item[-] GitHub: https://github.com/xxxxxxx
+\end{rSubsection}
+\end{rSection}
+
+\end{document}
