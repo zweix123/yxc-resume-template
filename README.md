@@ -1,4 +1,4 @@
-acwing yxc resume template
+# acwing yxc resume template
 
 + problem：
   + 不能正确显式中文：使用LaTeX编译器为XeLaTeX
